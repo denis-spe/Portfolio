@@ -1,0 +1,19 @@
+/*
+    === Css default variables ===
+*/
+:root{
+    --primary-color: #edf2f4;
+    --primary-bg-color: #2b2d42;
+    --primary-font-family: 'Poppins', sans-serif;
+}
+
+/*
+    === Clear all the defaults ===
+*/
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
