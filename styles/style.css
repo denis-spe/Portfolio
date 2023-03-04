@@ -16,4 +16,55 @@
     box-sizing: border-box;
 }
 
+header,
+main,
+footer{
+    margin: 2% 2% 0% 2%;
+}
 
+/* Header contents */
+header{
+
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav-container{
+    width: 28%;
+    text-align: center;
+}
+
+.header-nav-container nav{
+    position: relative;
+    top: 18%;
+}
+
+.header-nav-container nav > ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header-nav-container nav > ul a{
+    text-decoration: none;
+}
+
+
+/* Portrait tablets and small desktops */
+@media (max-width: 927px){
+    .header-nav-container{
+        display: none;
+    }
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .header-nav-container{
+        width: 25%;
+        text-align: center;
+        background-color: green;
+    }
+}
