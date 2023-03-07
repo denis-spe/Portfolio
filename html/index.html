@@ -19,6 +19,10 @@
 <body>
   <!-- Header section -->
   <header id="header">
+    <div class="open-aside-container">
+      <button id="open-aside-id">menu</button>
+    </div>
+    
     <div class="header-container">
       <div class="name-container">
         <h1>Den</h1>
@@ -35,6 +39,24 @@
       </div>
     </div>
   </header>
+  
+  <!-- Aside Container -->
+  <aside id="aside-id">
+    
+    <div class="close-aside-container">
+      <button id="close-aside-id">close aside</button>
+    </div>
+    
+    <div class="aside-nav-container">
+       <nav>
+         <ul>
+           <li><a href="#">favorite language</a></li>
+           <li><a href="#">projects</a></li>
+           <li><a href="#">contacts</a></li>
+         </ul>
+       </nav>
+    </div>
+  </aside>
 
   <!-- Main section --->
   <main>
@@ -54,17 +76,17 @@
           <h2>Code samples</h2>
         </div>
         <code class="py">
-        <div class="code-title-container">
-          <h3>Python</h3>
-        </div>
-        <pre>
+          <div class="code-title-container">
+            <h3>Python</h3>
+          </div>
+          <pre>
             def hello(name):
               print(f"Hello, name!")
               
               
             hello("world")
           </pre>
-      </code>
+        </code>
       </section>
     </div>
   </main>
