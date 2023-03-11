@@ -54,11 +54,12 @@ header{
 
 
 /* Aside styling */
-#aside-id{
+aside{
   position: absolute;
   background-color: white;
   height: 100vh;
   top: 0;
+  display: none;
 }
 
 
@@ -80,7 +81,7 @@ header{
     }
     
     /* Don't display the aside button and container */
-    .aside-btn-container, #aside-id{
+    .aside-btn-container{
       display: none;
     }
 }

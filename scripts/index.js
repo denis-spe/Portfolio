@@ -1,12 +1,26 @@
 /* ==== Glory Be To God ===== */
 
-/* 
- Handling aside buttons 
- for opening and closing aside
- menu
-*/
-// Initialize the openAsideId and closeAsideId
-const openAsideId = document.getElementById("open-aside-id");
-const closeAsideId = document.getElementById("close-aside-id");
+document.addEventListener("DOMContentLoaded", function () {
+    /* 
+    Handling aside buttons 
+    for opening and closing aside
+    menu
+    */
+    // Initialize the openAsideId and closeAsideId
+    let openBtnAsideId = document.getElementById("open-aside-id");
+    let closeBtnAsideId = document.getElementById("close-aside-id");
 
-console.log(closeAsideId);
+    // Get the aside bar.
+    const asideId = document.getElementById("aside-id");
+
+
+    // Listen on clicking to open and close button.
+    openBtnAsideId.addEventListener("click", () => {
+        asideId.style.display = "block";
+    })
+    closeBtnAsideId.addEventListener("click", () => {
+        asideId.style.display = "none"
+    })
+
+})
+
